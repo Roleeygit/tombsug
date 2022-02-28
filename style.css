@@ -36,7 +36,7 @@ text-align: center;
   font-size: 17px;
 }
 
-.szamitgomb {
+#szamitgomb {
   background-color: black;
   color:crimson;
   padding: 5px 8px;

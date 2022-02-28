@@ -8,23 +8,29 @@
 */
 
 var oldalIn = document.getElementById("oldal");
-var szogIn = document.getElementById("szog");
+var alfaszogIn = document.getElementById("alfaszog");
 var szamitgomb = document.getElementById("szamitgomb");
 var eredmenyIn = document.getElementById("eredmeny");
 
 szamitgomb.addEventListener("click", function() {
-  
-    if (anygaStr.match(minta)) {
-        console.log("OK")
-    } else {
-        console.log("Nem ok.")
-        alert("Hiba! Csak szám adható meg.")
-        return;
+    let oldalStr = oldalIn.value;
+    let alfaszogStr = alfaszogIn.value;
+    let minta = /^[0-9]+$/;
+
+    if (oldalStr.match(minta)) {
+      console.log("ok")
+    }else if(alfaszogStr.match(minta)) {
+      console.log("ok")
+    } else { 
+      alert("Csak szám adható meg!");
+      return;
     }
 
-    let anyag = Number(anyagIn.value);
-    console.log(anyag);
-    let reszecskek = anyag * 6 * Math.pow(10, 23);
-    console.log(reszecskek.toLocaleString());
-    eredmenyIn.value = reszecskek.toLocaleString();
+    let oldal = Number(oldalIn.value);
+    console.log(oldal);
+    let alfaszog = Number(alfaszogIn.value);
+    console.log(alfaszog);
+    let sugar = 1/2 * oldal * Math.sin(alfaszog * Math.PI /180);
+    console.log(sugar.toLocaleString());
+    eredmenyIn.value = sugar.toLocaleString();
 });

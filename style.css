@@ -1,0 +1,28 @@
+/* File: style.css
+* Author: Juhász Roland
+* Copyright: 2022, Juhász Roland
+* Group: Szoft I N 
+* Date: 2022-02-28
+* Github: https://github.com/Roleeygit/
+* Licenc: GNU GPL
+*/
+
+.container {
+  background-color: gold;
+  margin: 2%;
+  padding: 15px;
+  border-radius: 5px;
+  border: solid 3px;
+  box-shadow: 15px 10px 20px;
+
+}
+
+input {
+
+margin-bottom: 4px;
+}
+
+h1 {
+font-family: sans-serif;
+
+}
